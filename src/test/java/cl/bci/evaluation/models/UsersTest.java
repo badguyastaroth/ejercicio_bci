@@ -1,8 +1,5 @@
 package cl.bci.evaluation.models;
 
-import cl.bci.dto.UsersDto;
-import cl.bci.models.Phone;
-import cl.bci.models.Users;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

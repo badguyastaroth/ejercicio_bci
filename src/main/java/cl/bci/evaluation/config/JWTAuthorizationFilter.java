@@ -1,4 +1,4 @@
-package cl.bci.config;
+package cl.bci.evaluation.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

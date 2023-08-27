@@ -1,11 +1,10 @@
-package cl.bci.dto;
+package cl.bci.evaluation.dto;
 
-import cl.bci.models.Phone;
+import cl.bci.evaluation.models.Phone;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.Instant;
 import java.util.List;
 
 @Getter

@@ -1,14 +1,14 @@
-package cl.bci.impl;
+package cl.bci.evaluation.impl;
 
-import cl.bci.dto.UsersDto;
-import cl.bci.models.Phone;
-import cl.bci.models.Users;
-import cl.bci.repository.PhoneRepository;
-import cl.bci.repository.UsersRepository;
+
+import cl.bci.evaluation.dto.UsersDto;
+import cl.bci.evaluation.models.Phone;
+import cl.bci.evaluation.models.Users;
+import cl.bci.evaluation.repository.PhoneRepository;
+import cl.bci.evaluation.repository.UsersRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

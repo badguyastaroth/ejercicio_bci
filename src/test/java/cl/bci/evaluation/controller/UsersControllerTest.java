@@ -1,8 +1,6 @@
 package cl.bci.evaluation.controller;
 
-import cl.bci.controller.UsersController;
-import cl.bci.impl.UsersImpl;
-import cl.bci.models.Users;
+import cl.bci.evaluation.models.Users;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,7 +14,7 @@ public class UsersControllerTest {
     private UsersController controller = new UsersController();
 
     @Test
-    public void signUpTest(){
+    public void signUpMissingPasswordTest(){
         Users user = new Users();
         user.setEmail("test@test.cl");
         user.setPassword(null);
@@ -24,7 +22,7 @@ public class UsersControllerTest {
     }
 
     @Test
-    public void signUpTest1(){
+    public void signUpErrorPasswordTest(){
         Users user = new Users();
         user.setEmail("test@test.cl");
         user.setPassword("test");
@@ -32,7 +30,7 @@ public class UsersControllerTest {
     }
 
     @Test
-    public void signUpTest2(){
+    public void signUpErrorFormatEmailTest(){
         Users user = new Users();
         user.setEmail("testtest.cl");
         user.setPassword("Test12dsfg");
@@ -40,7 +38,7 @@ public class UsersControllerTest {
     }
 
     @Test
-    public void signUpTest3(){
+    public void signUpCorrectTest(){
         Users user = new Users();
         user.setEmail("test@test.cl");
         user.setPassword("Test12dsfg");

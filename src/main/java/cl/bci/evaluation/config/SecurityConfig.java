@@ -1,4 +1,4 @@
-package cl.bci.config;
+package cl.bci.evaluation.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

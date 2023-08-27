@@ -1,4 +1,4 @@
-package cl.bci.models;
+package cl.bci.evaluation.models;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

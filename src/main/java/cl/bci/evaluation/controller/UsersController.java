@@ -1,15 +1,15 @@
-package cl.bci.controller;
+package cl.bci.evaluation.controller;
 
-import java.time.Instant;
 
-import cl.bci.impl.UsersImpl;
-import cl.bci.models.Users;
+import cl.bci.evaluation.models.Users;
+import cl.bci.evaluation.service.UsersService;
 import com.sun.istack.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.Instant;
 import java.util.regex.Pattern;
 
 @RestController
@@ -20,8 +20,8 @@ public class UsersController {
 
     public static final Pattern PASSWORD_VALIDATION =
             Pattern.compile("^(?=.*[A-Z])(?=.*\\d.*\\d)[A-Za-z\\d]{8,12}$");
-    @Autowired
-    UsersImpl usersService;
+
+    UsersService usersService;
 
     @PostMapping("/sign-up")
     public ResponseEntity signUp(@RequestBody Users user){

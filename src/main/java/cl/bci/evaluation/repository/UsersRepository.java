@@ -1,6 +1,6 @@
-package cl.bci.repository;
+package cl.bci.evaluation.repository;
 
-import cl.bci.models.Users;
+import cl.bci.evaluation.models.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

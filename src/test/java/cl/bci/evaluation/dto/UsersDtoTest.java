@@ -1,7 +1,6 @@
 package cl.bci.evaluation.dto;
 
-import cl.bci.dto.UsersDto;
-import cl.bci.models.Phone;
+import cl.bci.evaluation.models.Phone;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -15,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class UsersDtoTest {
 
     @Test
-    public void usersDtoTest() throws Exception {
+    public void usersDtoTest()  {
         UsersDto actual = new UsersDto();
         UsersDto expect = new UsersDto();
         List<Phone> list = new ArrayList<>();

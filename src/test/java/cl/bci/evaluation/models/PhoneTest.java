@@ -1,6 +1,5 @@
 package cl.bci.evaluation.models;
 
-import cl.bci.models.Phone;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -14,11 +13,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PhoneTest {
 
     @Test
-    public void usersDtoTest() throws Exception {
+    public void usersDtoTest()  {
         Phone actual = new Phone();
         Phone expect = new Phone();
-        List<Phone> list = new ArrayList<>();
-        Instant i = Instant.now();
         actual.setIdPhone(1L);
         actual.setNumber(999999999L);
         actual.setCityCode(32);

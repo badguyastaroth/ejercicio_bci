@@ -1,14 +1,12 @@
 package cl.bci.evaluation.impl;
 
-import cl.bci.impl.UsersImpl;
-import cl.bci.models.Users;
-import cl.bci.repository.PhoneRepository;
-import cl.bci.repository.UsersRepository;
+import cl.bci.evaluation.models.Users;
+import cl.bci.evaluation.repository.PhoneRepository;
+import cl.bci.evaluation.repository.UsersRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -16,14 +14,14 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest
 public class UsersImplTest {
 
+    @InjectMocks
+    private UsersImpl userImpl = new UsersImpl();
+
     @Mock
     private UsersRepository usersRepository;
 
     @Mock
     private PhoneRepository phoneRepository;
-
-    @InjectMocks
-    private UsersImpl userImpl = new UsersImpl();
 
     @Test
     public void jwtTokenTest(){
